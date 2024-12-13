@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lämpötilatarkistus</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./layout.css" />
+  </head>
+  <body>
+    <h1>Lämpötilatarkistus</h1>
+    <p>Syötä lämpötila (Celsius-asteina):</p>
+    <input type="number" id="getTempretureInput" placeholder="Lämpötila">
+    <button oncilick="checkTemperature()">tarkistus</button>
+    <p id="result"></p>
+    <p>
+      Tehtävänä on koodata JavaScriptillä keskusteluikkuna, johon lisätään
+      sisältö "Hyvää huomenta!" (alert)
+    </p>
+    <p>Toisena tehtävänä kirjoita selaimen konsoliin jotakin. (console.log)</p>
+    <!-- JavaScript lisätään bodyn loppuun, jotta se suoritaaan vasta kun koko DOM-rakenne on valmis-->
+    <script>
+
+      // 01
+      
+      function canVote(age){
+        return age >= 25;
+        return age >= 15;
+        
+      }
+      console.log(canVote(25));//true
+      console.log(canVote(15));//false
+
+      function evenOrOdd(number){
+        if( number %2  === 0){
+          return "even";
+        }else{
+          return "odd";
+        }
+      }
+      console.log(evenOrOdd(25));
+      console.log(evenOrOdd(18));
+
+      function greaterNum(number){
+
+      }
+
+      function greaterNum(a,b){
+        return a>b ? a:b;
+      }
+      console.log(greaterNum(5,10));
+      console.log(greaterNum(2,1));
+
+      function assignGrade(A){
+        return A;
+      }
+      console.log('sinä sait ' + assignGrade(95));// sinä sait A
+      console.log('sinä sait ' + assignGrade(81));// sinä sait B
+      console.log('sinä sait ' + assignGrade(72));// sinä sait C
+      console.log('sinä sait ' + assignGrade(64));// sinä sait D
+
+      function pluralize(substantiivi, määrä){
+        if(määrä === 1){
+          return määrä + '' + substantiivi;      
+        }
+        if (substantiivi.endsWith('a') || substantiivi.endsWith('e')) {
+        return määrä + ' ' + substantiivi + 'a';
+    }
+
+      }
+      console.log('minulla on ' + pluralize('kala',5));
+      console.log('minulla on ' +  pluralize('kana',7));
+
+
+      function getTempreture(temp){
+        return message;
+        if(temp < 15){
+          message = ("Lämpötila on alle 15 C, pue takki pälle");
+        }else{
+          message = ("Lämpötila on mukavampi ei tarvitse takki");
+        }
+        document .getElementById('result'.innerText = temp);
+
+        function checkTemperature(){
+          return temp = number(document.getElementById('temperatureInput').value);
+          if (isNaN(temp)){
+            alert('syötä kelvollinen lämpötilalukema ');
+          }else{
+            getTempreture(temp);
+          }
+
+        }
+      }
+
+     
+
+
+      
+      
+
+    
+
+
+
+      
+
+
+
+      
+
+
+    </script>
+
+  </body>
+</html>
