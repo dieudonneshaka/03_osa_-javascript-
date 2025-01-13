@@ -22,6 +22,10 @@
     <script>
 
       // 01
+
+      /**
+      Toteuta funktio canVote siten, että se palauttaa arvon true aina kun ikä on 18 tai enemmän ja false muissa tapauksissa.
+      */
       
       function canVote(age){
         return age >= 25;
@@ -31,6 +35,9 @@
       console.log(canVote(25));//true
       console.log(canVote(15));//false
 
+
+
+
       function evenOrOdd(number){
         if( number %2  === 0){
           return "even";
@@ -38,8 +45,16 @@
           return "odd";
         }
       }
-      console.log(evenOrOdd(25));
-      console.log(evenOrOdd(18));
+      console.log(evenOrOdd(25));// "odd"
+      console.log(evenOrOdd(18));// "even"
+
+
+      /**
+      Kehitä funktio nimeltä greaterNum, joka:
+
+      - Hyväksyy kaksi argumenttia, jotka molemmat ovat numeroita.
+      - Palauttaa näistä kahdesta suuremman numeron.
+      */
 
       function greaterNum(number){
 
@@ -51,6 +66,20 @@
       console.log(greaterNum(5,10));
       console.log(greaterNum(2,1));
 
+
+      /**
+      Kehitä funktio nimeltä assignGrade, joka:
+
+      Hyväksyy yhden argumentin, numeerisen pistemäärän.
+      Palauttaa kirjainarvosanan pistemäärän perusteella seuraavasti:
+      - 'A' pistemäärille 90 tai enemmän.
+      - 'B' pistemäärille 80-89.
+      - 'C' pistemäärille 70-79.
+      - 'D' pistemäärille 60-69.
+      - 'F' pistemäärille alle 60.
+
+      */
+
       function assignGrade(A){
         return A;
       }
@@ -58,6 +87,18 @@
       console.log('sinä sait ' + assignGrade(81));// sinä sait B
       console.log('sinä sait ' + assignGrade(72));// sinä sait C
       console.log('sinä sait ' + assignGrade(64));// sinä sait D
+
+
+      /**
+      Kirjoita funktio nimeltä pluralize, joka:
+
+      Hyväksyy kaksi argumenttia: substantiivin ja numeron.
+      Palauttaa merkkijonon, joka yhdistää numeron ja sopivasti taipuvan muodon substantiivista, kuten '5 kissaa' tai '1 koira'.
+
+      */
+
+
+
 
       function pluralize(substantiivi, määrä){
         if(määrä === 1){
@@ -71,6 +112,12 @@
       console.log('minulla on ' + pluralize('kala',5));
       console.log('minulla on ' +  pluralize('kana',7));
 
+
+      /**
+      * Tätä ohjelmaa varten tarvitaan verkkosivua, eli se ei toimi pelkästään konsolissa.
+      * Joten tee ensin html sivu ja linkkaa tämä tiedosto siihen. Prompt-ikkuna aukeaa sivulle, testaa Live serverin avulla.
+      * Luo ohjelma getTemperature, joka kysyy käyttäjältä lämpötilaa Celsius-asteina ja sitten tulostaa, pitäisikö heidän pukea takki päälle (jos lämpötila on alle 15°C) vai ei.
+      */
 
       function getTempreture(temp){
         return message;
